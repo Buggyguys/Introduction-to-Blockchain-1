@@ -20,3 +20,22 @@ brew install openssl
 ```bash 
 gcc -o merkle_tree solution.c merkle_tree.c -I$(brew --prefix openssl)/include -L$(brew --prefix openssl)/lib -lssl -lcrypto
 ```
+---
+## [Assignment 3](Assignment_3)
+> [!IMPORTANT]  
+> Ensure port forwarding on your router, update firewall rules to allow the specified port, and use public IP addresses for cross-network communication
+
+### Requirements:
+**Before running the program** set these environment variables in your terminal:
+```bash
+export EMAIL_FROM="your_email_example"
+export EMAIL_TO="recipient_email_example"
+export SMTP_SERVER="smtp.example.com:2525"
+```
+### How to run:
+```bash 
+go run server.go
+```
+```bash
+go run client.go
+```
